@@ -48,52 +48,42 @@ class MainActivity : AppCompatActivity() {
 
             override fun onStopTrackingTouch(p0: SeekBar?) {
             }
-
         })
 
         sbVerde.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) { //1. x 2. el valor del seekbar 3.
-
                 green  = p1
                 if (rbFondo.isChecked){
                     tvMensaje.setBackgroundColor(Color.rgb(red,green,blue))
                 }
-
                 if (rbFuente.isChecked){
                     tvMensaje.setTextColor(Color.rgb(red, green, blue))
                 }
 
             }
-
             override fun onStartTrackingTouch(p0: SeekBar?) {
             }
-
             override fun onStopTrackingTouch(p0: SeekBar?) {
             }
-
         })
 
         sbAzul.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) { //1. x 2. el valor del seekbar 3.
-
                 blue  = p1
                 if (rbFondo.isChecked){
                     tvMensaje.setBackgroundColor(Color.rgb(red,green,blue))
                 }
-
                 if (rbFuente.isChecked){
                     tvMensaje.setTextColor(Color.rgb(red, green, blue))
                 }
-
             }
-
             override fun onStartTrackingTouch(p0: SeekBar?) {
             }
-
             override fun onStopTrackingTouch(p0: SeekBar?) {
             }
-
         })
 
     }
+
 }
+
